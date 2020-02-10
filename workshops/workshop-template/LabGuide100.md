@@ -1,3 +1,5 @@
+![](images/lab100/Picture100-lab.png)  
+
 Updated: February 10, 2020
 
 ## Introduction
