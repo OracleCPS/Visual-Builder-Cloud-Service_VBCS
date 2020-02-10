@@ -1,4 +1,4 @@
-![](images/lab100/100logo.png)  
+![](images/lab100/100logo.png)
 
 Updated: February 10, 2020
 
@@ -9,7 +9,7 @@ This is a workshop that will walk you through how to successfully create a fully
 - Drag-and-Drop UI Design
 - REST API configuration 
 - Action Chain configuration
-- Data Flow within VBCS.
+- Data Flow within VBCS
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
@@ -21,15 +21,23 @@ This is a workshop that will walk you through how to successfully create a fully
     - Manage Data Flow through a combination of Variables, Event Listeners and Action Chains
 
 ## Required Artifacts
-- The following lab requires an Oracle Cloud account.
+- The following lab requires an Oracle Cloud account as well as an instance of VBCS already created
 
-# Create Twitter Feed Marketing Project
 
-## Create Developer Cloud Service Project
+## Create the Web Application Project
 
-### **STEP 1**: Login to your Oracle Cloud Account
-- From any browser, go to the URL:
-    `https://cloud.oracle.com`
+### **STEP 1**: Create a New Project
+
+- On the main menu of VBCS, click the `+ New Application` button
+
+- Enter a name for the application, then click `Finish`
+
+- Now that we've successfully created a new Project, we can begin to create the actual web application itself. Click on the `Desktop icon` on the left side below the `Phone icon`. For the purposes of this workshop, we will be creating a Web application, not Mobile application.
+
+- Enter a name for the web application, then click `Create`.
+
+
+
 
 - click **Sign In** in the upper right hand corner of the browser
 
