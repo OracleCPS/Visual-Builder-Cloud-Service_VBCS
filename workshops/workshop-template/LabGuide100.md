@@ -32,42 +32,13 @@ This is a workshop that will walk you through how to successfully create a fully
 
 - Enter a name for the application, then click `Finish`
 
-- Now that we've successfully created a new Project, we can begin to create the actual web application itself. Click on the `Desktop icon` on the left side below the `Phone icon`. For the purposes of this workshop, we will be creating a Web application, not Mobile application.
+- Now that we've successfully created a new Project, we can begin to create the actual web application itself. Click on the `Desktop icon` on the left side below the `Phone icon`. For the purposes of this workshop, we will be creating a **Web** application, not **Mobile** application
 
-- Enter a name for the web application, then click `Create`.
+- Enter a name for the web application, then click `Create`
 
+- With the web application now created, expand the `Flows` hierarchy. Right click the `main-start` file and rename it to `landing`. This will be the landing page for our app (alternatively, think of it as an index.html file for any app)
 
-
-
-- click **Sign In** in the upper right hand corner of the browser
-
-    ![](images/100/Picture100-1.png)
-
-- **IMPORTANT** - Under my services, select from the drop down list the correct data center and click on **My Services**. If you are unsure of the data center you should select, and this is an in-person training event, ***ask your instructor*** which **Region** to select from the drop down list. If you received your account through an Oracle Trial, your Trial confirmation email should provide a URL that will pre-select the region for you.
-
-    ![](images/100/Picture100-2.png)
-
-- Enter your identity domain and click **Go**.
-
-    **NOTE:** The **Identity Domain, User Name** and **Password** values will be given to you by the instructor or Trial confirmation email.
-
-    ![](images/100/Picture100-3.png)
-
-- Once your Identity Domain is set, enter your User Name and Password and click **Sign In**
-
-  **NOTE:** For this lab you will assume the role of Project Manager ***Lisa Jones***. Although you are assuming the identify of Lisa Jones, you will log into the account using the **username** provided to you by your instructor, given to you by your corporation, or supplied to you as part of an Oracle Trial. As you progress through the workshop, you will remain logged in as a single user, but you will make “logical” changes from Lisa Jones the Project Manager to other personas.
-
-    ![](images/lisa.png)
-
-    ![](images/100/Picture100-3.5.png)
-
-- You will be presented with a Dashboard displaying the various cloud services available to this account.
-
-    ![](images/100/Picture100-4.png)
-
-- If all your services are not visible, **click** on the **Customize Dashboard**, you can add services to the dashboard by clicking **Show.** For this workshop, you will want to ensure that you are showing at least the **Application Container, Developer and Storage** cloud services. If you do not want to see a specific service, click **Hide**
-
-    ![](images/100/Picture100-5.png)
+- 
 
 ### **STEP 2**: Check/Set Storage Replication Policy
 
