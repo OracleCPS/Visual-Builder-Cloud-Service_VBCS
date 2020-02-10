@@ -1,27 +1,20 @@
-
-![](images/100/Picture100-lab.png)  
-Updated: February 10, 2017
+Updated: February 10, 2020
 
 ## Introduction
 
-This is the first of several labs that are part of the **Oracle Public Cloud DevOps Cloud Native Microservices workshop.** This workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project that will create and use several Microservices.
-
-You will take on 3 Personas during the workshop. The **Project Manager Persona** will create the projects, add tasks and features to be worked on, and assign tasks to developers.  The Project Manager will then start the initial sprint. The Java Developer persona will develop a new twitter feed service that will allow for retrieval and filtering of twitter data. The **JavaScript Developer** persona will develop a new Twitter Marketing UI that will display the twitter data to allow for analysis.  During the workshop, you will get exposure to Oracle Developer Cloud Service and Oracle Application Container Cloud Service.
+This is a workshop that will walk you through how to successfully create a fully functional web application using VBCS. Though the web application that we will be creating is relatively simple, the lab will walk you through many of the common features of VBCS that Developers often use. Specifically, the workshop will cover: Drag-and-Drop UI Design, REST API configuration, Action Chain configuration, and Data Flow within VBCS.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Objectives
-- Create Initial Project
-    - Add Users to Project
-- Create Product Issues
-    - Create Issues for Twitter Feed Microservice
-    - Create Issues for Twitter Feed Marketing UI
-- Create Agile Board and initial Sprint
-- Add Issues to Sprint
+- Create Web Application
+    - Build Front-End 
+    - Configure REST API connections
+    - Implement logic using Action Chains
+    - Manage Data Flow through a combination of Variables, Event Listeners and Action Chains
 
 ## Required Artifacts
-- The following lab requires an Oracle Public Cloud account that will be supplied by your instructor.
-
+- The following lab requires an Oracle Cloud account.
 
 # Create Twitter Feed Marketing Project
 
