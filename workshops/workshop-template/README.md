@@ -1,3 +1,3 @@
-# Container Native Application Development Workshop
+# Oracle VBCS Workshop
 
-## About this Workshop
+## Workshop I am creating for Knowledge Transfer
