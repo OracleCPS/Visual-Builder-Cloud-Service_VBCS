@@ -15,7 +15,8 @@ This is a workshop that will walk you through how to successfully create a fully
 
 ## Objectives
 
-For this workshop, we will create a Web Application that has 2 pages. The first page is a list of countries. Whenever a user clicks on one of the countries, the our app should redirect the user to another country page which has information for that specific country clicked on. Sounds simple, but there's actually a lot that goes into it. The completed app looks like this:
+For this workshop, we will create a Web Application that displays a list of countries' information. The information that we will be using comes from a public country API that can be found at https://restcountries.eu/#api-endpoints-all. The finished
+product has 2 screens, and looks like so:
 
 ![](images/100/100-finished-app-1.png)
 ![](images/100/100-finished-app-2.png)
