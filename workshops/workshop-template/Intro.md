@@ -1,9 +1,6 @@
-# Name Of The Workshop
+# Oracle VBCS Workshop
 
-Welcome to the ...workshop. This workshop will walk you through the process of...
-To learn more about this workshop please watch the video below.
-
-<a href="https://youtu.be/" target="_video">Workshop Overview</a>
+Welcome to the VBCS workshop. This workshop will walk you through the process of designing your very first web application using VBCS.
 
 ### **Step 1**: Acquire an Oracle Cloud Trial or Workshop Account
 
