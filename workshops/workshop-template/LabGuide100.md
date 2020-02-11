@@ -4,7 +4,7 @@ Updated: February 10, 2020
 
 ## Introduction
 
-This is a workshop that will walk you through how to successfully create a fully functional web application using VBCS. Though the web application that we will be creating is relatively simple, the lab will walk you through many of the common features of VBCS that Developers often use. Specifically, the workshop will cover: 
+This is a workshop that will walk you through how to successfully create a fully functional web application using VBCS. The  workshop will walk you through many of the common features of VBCS that Developers often use. Specifically, the workshop will cover: 
 
 - Drag-and-Drop UI Design
 - REST API configuration 
