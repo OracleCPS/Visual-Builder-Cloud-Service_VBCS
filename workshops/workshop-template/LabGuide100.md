@@ -58,7 +58,8 @@ Setting up the GET endpoint for all countries:
 Setting up the GET endpoint for a specific country:
 - Follow the same steps above, but instead for the URL input, enter: `/name/{countryName}`
 - In the `Action Hint` selection box, change the value from `Get Many` to `Get One`, then verify that the connection has been successfully set up with the string `Afghanistan` (similar to above, you should get a 200 code)
-- Click `Create`
+- Click `Copy Response to Body`, then click `Add`
+- Verify that your connections look like the following:
 
 
 
