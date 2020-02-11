@@ -48,10 +48,11 @@ This is a workshop that will walk you through how to successfully create a fully
 - With the web application now created, expand the `Flows` hierarchy. Right click the `main-start` file and rename it to `landing`. This will be the landing page for our app (alternatively, think of it as an index.html file for any other app you may have built)
 
 ![](images/100/100-5.png)
+![](images/100/100-6.png)
 
 - Create a new file by pressing the `+` button, and naming the page `specific-country`
 
-![](images/100/100-6.png)
+![](images/100/100-7.png)
 
 - The wep application has been successfully set up at this point. Before we begin building the Front End UI, let's set up our REST connection.
 
