@@ -171,13 +171,13 @@ Now that we've properly configured our REST connections, let's start creating ou
 
 ![](images/100/100-29.png)
 
-- Click `+ Variable`, and create 4 new variables called `countryName` (String), `countryCode` (String), `countryCapital` (String), `countryRegion` (String), `countryPopulation` (Number) and `countryFlagURL` (String). 
+- Click `+ Variable`, and create 4 new variables called `countryName` (String), `countryCode` (String), `countryCapital` (String), `countryRegion` (String), `countryPopulation` (Number) and `countryFlagURL` (String). Your variables page should look like:
 
 ![](images/100/100-30.png)
 
 - Make sure that the variable `countryName` has `enabled` marked for the `Input Parameter` section. Marking this as enabled means that we are passing the `countryName` variable from one page to the next (in this case we are passing the countryName variable from the landign page to the specific country page)
 
-(extra image here)
+![](images/100/100-52.png)
 
 - Let's next assign the values of those input boxes to the variables we just created. For each `Input Text` element, set the value to the variable we created (i.e the `Country Code` label's input text should be binded to the `countryCode` variable). In the `data` tab, enter the name of the variable like below. Repeat this for the other 3 `input text` boxes. Afterwards, check the `Readonly` component, since this box will only be used to display information instead of accepting input 
 
