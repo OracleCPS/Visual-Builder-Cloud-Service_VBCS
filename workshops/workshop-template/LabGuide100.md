@@ -14,15 +14,16 @@ This is a workshop that will walk you through how to successfully create a fully
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Objectives
-- Create Web Application
-    - Build Front-End 
+- For this workshop, we will create a Web Application that lists out Countries and information specific to a certain country when a country row is clicked on, as shown below:
+
+- The following actions need to be done for this project:
+    - Build a Front-End 
     - Configure REST API connections
     - Implement logic using Action Chains
     - Manage Data Flow through a combination of Variables, Event Listeners and Action Chains
 
 ## Required Artifacts
 - The following lab requires an Oracle Cloud account as well as an instance of VBCS already created
-
 
 ## Create the Web Application Project
 
@@ -32,21 +33,35 @@ This is a workshop that will walk you through how to successfully create a fully
 
 - Enter a name for the application, then click `Finish`
 
-- Now that we've successfully created a new Project, we can begin to create the actual web application itself. Click on the `Desktop icon` on the left side below the `Phone icon`. For the purposes of this workshop, we will be creating a **Web** application, not **Mobile** application
+- Now that we've successfully created a new Project, we can begin to create the actual web application itself. Click on the `Desktop icon` on the left side below the Phone icon. For the purposes of this workshop, we will be creating a Web application, **NOT** a Mobile application
 
 - Enter a name for the web application, then click `Create`
 
-- With the web application now created, expand the `Flows` hierarchy. Right click the `main-start` file and rename it to `landing`. This will be the landing page for our app (alternatively, think of it as an index.html file for any app)
+- With the web application now created, expand the `Flows` hierarchy. Right click the `main-start` file and rename it to `landing`. This will be the landing page for our app (alternatively, think of it as an index.html file for any other app you may have built)
 
-- 
+- The wep application has been successfully set up at this point. Before we begin building the Front End UI, let's set up our REST connection.
 
-### **STEP 2**: Check/Set Storage Replication Policy
+### **STEP 2**: Create the REST API Connection
 
-Depending on the state of your Cloud Account, you may need to set the replication policy, if it has not been previously set. In this step you will got to the Storage Cloud Service to check on the status of the Replicaton Policy. 
+With our web application structure set up, we can now set up our REST connection. Specifically, our app will be consuming information from this link: https://restcountries.eu/#api-endpoints-all. Essentially, what we need are two endpoints from this server: an endpoint that returns **all** countries' information, and an endpoint that returns information for a **specific** country.
 
-- Click on the **Storage** Cloud Service
+Setting up the GET endpoint for all countries:
 
-    ![](images/100/Picture-01.png)
+- Click on the `Service Connections` tab on the left, and hit `+ Service Connection`
+- Click `Define by Endpoint`
+- Enter `https://restcountries.eu/rest/v2/all` into the URL input, then click `Next`
+- Rename the `Service Name` to `Countries`
+- In the `Test` tab, click `Send` and verify that the status code returned is 200
+- Click `Copy to Response Body`, ignoring any warning messages that may pop up
+- Click `Create`
+
+Setting up the GET endpoint for a specific country:
+- Follow the same steps above, but instead for the URL input, enter: `/name/{countryName}`
+- In the `Action Hint` selection box, change the value from `Get Many` to `Get One`, then verify that the connection has been successfully set up with the string `Afghanistan` (similar to above, you should get a 200 code)
+- Click `Create`
+
+
+
 
 - If you see a message requesting that you **Set Replication Policy** as is shown below, click on the message. If the message is not displayed, your replicatin policy has already been set and you can continue to the next step by clicking on the **Dashboard** icon in the top right corner of the page.
 
