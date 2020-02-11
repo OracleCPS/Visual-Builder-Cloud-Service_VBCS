@@ -21,10 +21,11 @@ For this workshop, we will create a Web Application that has 2 pages. The first 
 ![](images/100/100-finished-app-2.png)
 
 There are a couple of things that need to be done for this project. We need to:
-    - Build a Front-End
-    - Configure REST API connections
-    - Implement logic using Action Chains
-    - Manage Data Flow through a combination of Variables, Event Listeners and Action Chains
+
+- Build a Front-End
+- Configure REST API connections
+- Implement logic using Action Chains
+- Manage Data Flow through a combination of Variables, Event Listeners and Action Chains
 
 ## Required Artifacts
 - The following lab requires an Oracle Cloud account as well as an instance of VBCS already created
