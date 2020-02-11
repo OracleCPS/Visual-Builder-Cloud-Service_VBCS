@@ -149,7 +149,7 @@ Now that we've properly configured our REST connections, let's start creating ou
 
 ![](images/100/100-24.png)
 
-- Let's now make the font bold for that specific column. In the `all` tab in the `columns` section, click the `right arrow sign`. In the `columns.header-style` box, enter `font-weight: bold;`. In this way, we our adding in our own CSS to style this page
+- Let's now make the font bold for that specific column. In the `all` tab in the `columns` section, click the `right arrow sign`. In the `columns.header-style` box, enter `font-weight: bold`. In this way, we our adding in our own CSS to style this page
 
 - Perform the last two steps for **all** columns to get this outcome:
 
@@ -163,7 +163,7 @@ Now that we've properly configured our REST connections, let's start creating ou
 
 ![](images/100/100-27.png)
 
-- Click on the `Labels` that you created (each Input Text element consists of a Label and an input value box), and change the `Text` property of each one to `Country Code:`, `Capital:`, `Region:`, and `Population`. The page should now look like so:
+- Click on the `Labels` that you created (each Input Text element consists of a Label and an input value box), and change the `Text` property of each one to `Country Code:`, `Capital:`, `Region:`, and `Population:`. The page should now look like so:
 
 ![](images/100/100-28.png)
 
