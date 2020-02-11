@@ -31,7 +31,7 @@ This is a workshop that will walk you through how to successfully create a fully
 
 - On the main menu of VBCS, click the `+ New Application` button
 
-![](images/lab100/100-1.png)
+![](workshops/workshop-template/images/100/100-1.png)
 
 - Enter a name for the application, then click `Finish`
 
