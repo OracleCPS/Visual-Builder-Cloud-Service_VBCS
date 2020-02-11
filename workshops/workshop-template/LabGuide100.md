@@ -152,11 +152,11 @@ Great! The name is successfully passed, but all of the other information wasn't.
 
 - Test out the application using the `Play` icon in the top right corner 
 
-- Great! The app looks exactly how we want it to look
+- Great! The app is now finished. If you'd like to change the way things are laid out on the page feel free to play around with any CSS properties (i.e. padding, center components, etc.) as well
 
-### **STEP 6**: Create Issue for Update Twitter Credentials
+### **Summary**
 
-### **STEP 7**: Create Issue for initial GIT Repository creation
+
 
 
 
