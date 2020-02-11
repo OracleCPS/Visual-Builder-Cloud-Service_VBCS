@@ -106,11 +106,11 @@ Now that we've properly configured the REST connections, let's start creating ou
 
 - Make sure that the variable `countryName` has `enabled` marked for the `Input Parameter` section. Marking this as enabled means that we are passing the `countryName` variable from one page to the next (in this case we are passing the countryName variable from the landign page to the specific country page)
 
-- Let's next assign the values of those input boxes to the variables we just created. For each `Input Text` element, set the value to the variable we created (i.e the `Country Code` label's input text should be binded to the `countryCode` variable). In the `data` tab, enter the name of the variable like below. Repeat this for the other 3 `input text` boxes
+- Let's next assign the values of those input boxes to the variables we just created. For each `Input Text` element, set the value to the variable we created (i.e the `Country Code` label's input text should be binded to the `countryCode` variable). In the `data` tab, enter the name of the variable like below. Repeat this for the other 3 `input text` boxes. Afterwards, check the `Readonly` component, since this box will only be used to display information instead of accepting input 
 
 - For the `Heading` component, change its data value to match the `countryName` variable
 
-- For the `Image` component, set the `width` to 450 and `height` to 350
+- For the `Image` component, set the `width` to 450 and `height` to 350. Additionally, change the 
 
 - This page has been successfully configured to receive any data passed to it from the Landing page. 
 
@@ -132,6 +132,28 @@ Now that we've properly configured the REST connections, let's start creating ou
 
 Great! The name is successfully passed, but all of the other information wasn't. What gives? Well, so far we've only passed the Country's name attribute to the page. We'd like to pass the other fields as well, but we **can't** because we actually dont have all of that information the (i.e. country's region or population). So what we need to do is actually pass in this *name* attribute we got from the first page and make another GET request (the second one that we set up earlier!). This is exactly why we passed in only the *name* attribute instead of all the attributes: to use it to make another API call. So what do we have to do next? Let's create an `Action Chain` that is run everytime the specific-country page is loaded. The purpose of this action chain is to call on our specific country endpoint.
   
+- On the specific-country page, select the `Events` tab, then click on `+ Event Listener`
+
+- Select `vbEnter`
+
+- Click the `+` icon next to "Page Action Chains". Let's call this chain `getCountryDetails`
+
+- In the `Action Chains` tab, click on the newly created chain
+
+- Drag over a `Call Rest Endpoint` component, then click on `Select Endpoint`
+
+- Under Service Connections, select the `/{countryName}` endpoint
+
+- Click on the red `Not Mapped` button, perform the following mapping and then click save:
+
+- Now we have to handle what happens when the GET request is successfuly performed. On a successful call, we want to map the response of that request to the variables we made, which should then update the input values on the specific-country page. Drag over an `Assign Variables` component to the chain
+
+- Click `Assign`, and then perform the mapping from the response of the request (left hand side) to the variables we want to hold their value on the right hand side
+
+- Test out the application using the `Play` icon in the top right corner 
+
+- Great! The app looks exactly how we want it to look
+
 ### **STEP 6**: Create Issue for Update Twitter Credentials
 
 ### **STEP 7**: Create Issue for initial GIT Repository creation
