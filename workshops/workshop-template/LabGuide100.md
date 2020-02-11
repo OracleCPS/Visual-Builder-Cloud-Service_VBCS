@@ -17,7 +17,7 @@ This is a workshop that will walk you through how to successfully create a fully
 - For this workshop, we will create a Web Application that lists out Countries and information specific to a certain country when a country row is clicked on, as shown below:
 
 - The following actions need to be done for this project:
-    - Build a Front-End 
+    - Build a Front-End
     - Configure REST API connections
     - Implement logic using Action Chains
     - Manage Data Flow through a combination of Variables, Event Listeners and Action Chains
@@ -39,6 +39,8 @@ This is a workshop that will walk you through how to successfully create a fully
 
 - With the web application now created, expand the `Flows` hierarchy. Right click the `main-start` file and rename it to `landing`. This will be the landing page for our app (alternatively, think of it as an index.html file for any other app you may have built)
 
+- Create a new file by pressing the `+` button, and naming the page `specific-country`
+
 - The wep application has been successfully set up at this point. Before we begin building the Front End UI, let's set up our REST connection.
 
 ### **STEP 2**: Create the REST API Connection
@@ -56,112 +58,80 @@ Setting up the GET endpoint for all countries:
 - Click `Create`
 
 Setting up the GET endpoint for a specific country:
+
 - Follow the same steps above, but instead for the URL input, enter: `/name/{countryName}`
 - In the `Action Hint` selection box, change the value from `Get Many` to `Get One`, then verify that the connection has been successfully set up with the string `Afghanistan` (similar to above, you should get a 200 code)
 - Click `Copy Response to Body`, then click `Add`
 - Verify that your connections look like the following:
 
+### **STEP 3**: Create the Frontend for the Landing Page
 
+Now that we've properly configured the REST connections, let's start creating our frontend
 
+- In the Components section on the Landing page, drag over a `Table` component. This component will be the main way we organize our data that we receieve from the GET ALL COUNTRIES endpoint
 
-- If you see a message requesting that you **Set Replication Policy** as is shown below, click on the message. If the message is not displayed, your replicatin policy has already been set and you can continue to the next step by clicking on the **Dashboard** icon in the top right corner of the page.
+- `Left click` the table element, and click `Add Data` on the right side
 
-    ![](images/100/Picture-02.png)
+- Select the `/all` endpoint, then hit `Next`
 
-- Care must be taking when setting your replication policy, because it cannot be changed. With Trial accounts, the first option available will generatlly set the replication policy sufficient for this workshop, so we will take the Default, and click on the **Set** button. 
+- From the Endpoint Structure, we select the fields that we want to display onto our frontend. Select `alpha2code`, `name`, `capital`, and `flag` in that order. Additionally, set the primary key to be `alpha2code`, then select `Next`
 
-    ![](images/100/Picture-03.png)
+- Click `Finish`
 
-- Click on the **Dashboard** button
+- Now that the table has data on it, we need to fix the `flag` column. We want the image of the flag to be shown instead of the URL for that image, so drag over an `Image` component onto that column
 
-    ![](images/100/Picture-04.png)
+- In the `Data` tab for that image, enter `{{ $current.row.flag }}`
 
-### **STEP 3**: Login to Developer Cloud Service
+- Preview the application to see the changes take effect by clicking the `Play` button icon in the top right corner
 
-Oracle Developer Cloud Service provides a complete development platform that streamlines team development processes and automates software delivery. The integrated platform includes an issue tracking system, agile development dashboards, code versioning and review platform, continuous integration and delivery automation, as well as team collaboration features such as wikis and live activity stream. With a rich web based dashboard and integration with popular development tools, Oracle Developer Cloud Service helps deliver better applications faster.
+- The images are quite big, so let's resize them. In the `General` tab, set the `width` and `height` to 70.
 
-- From the Cloud UI dashboard click on the **Developer** service. In our example, the Developer Cloud Service is named **developer99019**.
+- Next, let's fix some of the styling on the page. Rather than displaying "alpha2code" for the column, let's fix that column to display "Country Code" instead. Under the `data` option for the table, click on the `Edit` icon for `Table Columns`. Modify the `headerText` field to be `Country Code`
 
-    ![](images/100/Picture100-6.png)
+- Let's now make the font bold for that specific column. In the `all` tab in the `columns` section, click the `right arrow sign`. In the `columns.header-style` box, enter `font-weight: bold;`. In this way, we our adding in our own CSS to style this page
 
-- The Service Details page gives you a quick glance of the service status overview.
+- Perform the last two steps for all columns to get this outcome:
 
-    ![](images/100/Picture100-7.png)
+- This page looks good to go. The next thing we need to add is some logic that handles what happens when a user clicks on a row. When a user clicks on a row, we want to redirect that user to another page with more details about that country. We will handle this in the next section.
 
-- Click **Open Service Console** for the Oracle Developer Cloud Service. The Service Console will then list all projects for which you are currently a member.
+### **STEP 4**: Create the Frontend for the Specific Country Page
 
-    ![](images/100/Picture100-7.5.png)
+- Drag over a `Heading`, `Image` and 4 `Input Text` components to the page. At this point, the specific-country page should look like so:
 
-### **STEP 4**: Create Developer Cloud Service Project
+- Click on the `Labels` that you created (each Input Text element consists of a Label and an input value box), and change the `Text` property of each one to `Country Code:`, `Capital:`, `Region:`, and `Population`. The page should now look like so:
 
-- Click **New Project** to start the project create wizard.
+- With the layout of the page created, now we have to assign the value of each input box to information that we receieve from the previous "landing" page. To pass data from one page to the next, we use `variables`. Click the `Variables & Types` section of the page.
 
-    ![](images/100/Picture100-8.png)
+- Click `+ Variable`, and create 4 new variables called `countryName` (String), `countryCode` (String), `countryCapital` (String), `countryRegion` (String), `countryPopulation` (Number) and `countryFlagURL` (String)
 
-- On Details screen enter the following data and click on **Next**.
+- Make sure that the variable `countryName` has `enabled` marked for the `Input Parameter` section. Marking this as enabled means that we are passing the `countryName` variable from one page to the next (in this case we are passing the countryName variable from the landign page to the specific country page)
 
-    **Name:** `Twitter Feed Marketing Project`
+- Let's next assign the values of those input boxes to the variables we just created. For each `Input Text` element, set the value to the variable we created (i.e the `Country Code` label's input text should be binded to the `countryCode` variable). In the `data` tab, enter the name of the variable like below. Repeat this for the other 3 `input text` boxes
 
-    **Description:** `Project to gather and analyze twitter data`
+- For the `Heading` component, change its data value to match the `countryName` variable
 
-    **Note:** A Private project will only be seen by you. A Shared project will be seen by all Developer Cloud users. In either case, users need to be added to a project in order to interact with the project.
+- For the `Image` component, set the `width` to 450 and `height` to 350
 
-    ![](images/100/Picture100-9.png)
+- This page has been successfully configured to receive any data passed to it from the Landing page. 
 
-- Leave default template set to **Empty Project** and click **Next**
+### **STEP 5**: Create the Logic that will pass information from the Landing page to the Specific Country Page
 
-    ![](images/100/Picture100-10.png)
+- We want to implement logic that handles what happens when a user clicks on a row in our Landing page table. To do this, navigate to the Landing page. Click on the table, and in the `Events` tab, click `+ New Event` and click on `Quick start: first-selected-row`. This will automatically bring forward an action chain
 
-- Select your **Wiki Markup** preference to **MARKDOWN** and click **Finish**.
+- Drag over a `Navigate` component to the chain
 
-    ![](images/100/Picture100-11.png)
+- Click `Select Target` and `Peer Page`. 
 
-- The Project Creation will take about 1 minute.
+- Select the `specific-country` page and then click `Select`. 
 
-    ![](images/100/Picture100-12.png)
+- Click `assign`
 
-- You now have a new project, in which you can manage your software development.
+- Map `rowData` to the `countryName` parameter. Modify the box below to include only the clicked-on country's **name** only, then click `Save`
 
-    ![](images/100/Picture100-13.png)
+- Test out the application by clicking the `Play` icon on the top right corner. Try clicking on the first row, which should give you this result:
 
-
-
-# Create Product Issues
-
-## Create Issues for Twitter Feed Microservice
-
-### **STEP 5**: Create Issue for the initial GIT Repository Creation
-
-In this step you are still assuming the identity of the Project Manager, ***Lisa Jones***.
-
-![](images/lisa.png)
-
-- Click **Issues** on left hand navigation panel to display the Track Issues page.
-
-    ![](images/100/Picture100-16.png)
-
-- Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**.
-
-    **Note:** Throughout the lab you will assign your own account as the “physical” owner of the issue, but for the sake of this workshop, **Bala Gupta** will be the “logical” owner of the following issues.
-
-    ![](images/bala.png)
-
-    **Summary:**
-    `Create Initial GIT Repository for Twitter Feed Service`
-
-    **Description:**
-    `Create Initial GIT Repository for Twitter Feed Service`
-
-    **Type:** `Task`
-
-    **Owner:** `Select your account provided in the dropdown [Logical Owner: Bala Gupta]`
-
-    **Story Points:** `1`
-
-    Note: Story point is an arbitrary measure used by Scrum teams. They are used to measure the effort required to implement a story. This [Site](https://agilefaq.wordpress.com/2007/11/13/what-is-a-story-point/) will provide more information. 
-
-    ![](images/100/Picture100-17.png)
-
+Great! The name is successfully passed, but all of the other information wasn't. What gives? Well, so far we've only passed the Country's name attribute to the page. We'd like to pass the other fields as well, but we **can't** because we actually dont have all of that information the (i.e. country's region or population). So what we need to do is actually pass in this *name* attribute we got from the first page and make another GET request (the second one that we set up earlier!). This is exactly why we passed in only the *name* attribute instead of all the attributes: to use it to make another API call. So what do we have to do next? Let's create an `Action Chain` that is run everytime the specific-country page is loaded. The purpose of this action chain is to call on our specific country endpoint.
+  
 ### **STEP 6**: Create Issue for Update Twitter Credentials
 
 - Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**.
