@@ -14,12 +14,13 @@ This is a workshop that will walk you through how to successfully create a fully
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Objectives
-- For this workshop, we will create a Web Application that has 2 pages. The first page is a list of countries. Whenever a user clicks on one of the countries, the our app should redirect the user to another country page which has information for that specific country clicked on. Sounds simple, but there's actually a lot that goes into it. The completed app looks like this:
+
+For this workshop, we will create a Web Application that has 2 pages. The first page is a list of countries. Whenever a user clicks on one of the countries, the our app should redirect the user to another country page which has information for that specific country clicked on. Sounds simple, but there's actually a lot that goes into it. The completed app looks like this:
 
 ![](images/100/100-finished-app-1.png)
 ![](images/100/100-finished-app-2.png)
 
-- There are a couple of things that need to be done for this project. We need to:
+There are a couple of things that need to be done for this project. We need to:
     - Build a Front-End
     - Configure REST API connections
     - Implement logic using Action Chains
