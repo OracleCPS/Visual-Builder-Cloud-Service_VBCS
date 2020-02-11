@@ -28,7 +28,8 @@ There are a couple of things that need to be done for this project. We need to:
 - Manage Data Flow through a combination of Variables, Event Listeners and Action Chains
 
 ## Required Artifacts
-- The following lab requires an Oracle Cloud account as well as an instance of VBCS already created
+
+The following lab requires an Oracle Cloud account as well as an instance of VBCS already created
 
 ## Create the Web Application Project
 
@@ -55,9 +56,9 @@ There are a couple of things that need to be done for this project. We need to:
 ![](images/100/100-5.png)
 ![](images/100/100-6.png)
 
-- Create a new file by pressing the `+` button, and naming the page `specific-country`
+- Additionally, create a new file by pressing the `+` button, and naming the page `specific-country`.
 
-![](images/100/100-7.png)
+![](images/100/100-26.png)
 
 - The wep application has been successfully set up at this point. Before we begin building the Front End UI, let's set up our REST connection.
 
