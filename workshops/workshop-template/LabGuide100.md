@@ -134,60 +134,7 @@ Great! The name is successfully passed, but all of the other information wasn't.
   
 ### **STEP 6**: Create Issue for Update Twitter Credentials
 
-- Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**.
-
-    ![](images/bala.png)
-
-    **Summary:** `Create Filter on Twitter Feed`
-
-    **Description:** `Create Filter to allow user to supply text to reduce the amount of data returned by the Twitter feed`
-
-    **Type:** `Feature`
-
-    **Owner:** `Select your account provided in the dropdown [Logical Owner: Bala Gupta]`
-
-    **Story Points:** `2`
-
-    ![](images/100/Picture100-18.png)
-
 ### **STEP 7**: Create Issue for initial GIT Repository creation
 
-- Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**. Note: The next two issues will logically be owned by John Dunbar.
-
-    ![](images/john.png)
-
-    **Summary:** `Create Initial GIT Repository for Twitter Feed Marketing UI`
-
-    **Description:** `Create Initial GIT Repository for Twitter Feed Marketing UI`
-
-    **Type:** `Task`
-
-    **Owner:** `Select your account provided in the dropdown [Logical Owner: John Dunbar]`
-
-    **Story Points:** `1`
-
-    ![](images/100/Picture100-19.png)
-
-### **STEP 8**: Create Issue for Displaying Twitter Feed
-
-- Click **New Issue**. Enter the following data in the New Issue page and click **Create Issue**.
-
-    ![](images/john.png)
-
-    **Summary:** `Display Twitter Feed in Table Format`
-
-    **Description:** `Display Twitter Feed in Table Format`
-
-    **Type:** `Feature`
-
-    **Owner:** `Select account provided in the dropdown [Logical Owner: John Dunbar]`
-
-    **Story Points:** `2`
-
-    ![](images/100/Picture100-20.png)
-
-- Click the back arrow ![](images/100/Picture100-21.png) on the **left side** of the window, or click on the **Issues** menu option to view all newly created issues.
-
-    ![](images/100/Picture100-22.png)
 
 
