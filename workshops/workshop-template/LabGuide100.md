@@ -1,4 +1,4 @@
-![](images/lab100/100logo.png)
+![](./images/lab100/100logo.png)
 
 Updated: February 10, 2020
 
