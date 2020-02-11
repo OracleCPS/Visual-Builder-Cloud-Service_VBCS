@@ -31,6 +31,8 @@ This is a workshop that will walk you through how to successfully create a fully
 
 - On the main menu of VBCS, click the `+ New Application` button
 
+![](images/lab100/100-1.png)
+
 - Enter a name for the application, then click `Finish`
 
 - Now that we've successfully created a new Project, we can begin to create the actual web application itself. Click on the `Desktop icon` on the left side below the Phone icon. For the purposes of this workshop, we will be creating a Web application, **NOT** a Mobile application
