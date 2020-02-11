@@ -37,15 +37,21 @@ This is a workshop that will walk you through how to successfully create a fully
 
 ![](images/100/100-2.png)
 
-- Now that we've successfully created a new Project, we can begin to create the actual web application itself. Click on the `Desktop icon` on the left side below the Phone icon. For the purposes of this workshop, we will be creating a Web application, **NOT** a Mobile application
+- Now that we've successfully created a new Project, we can begin to create the actual web application itself. Click on the `Desktop icon` on the left side below the Phone icon, then hit the `+ Web Application` button. For the purposes of this workshop, we will be creating a Web application, **NOT** a Mobile application
 
 ![](images/100/100-3.png)
 
 - Enter a name for the web application, then click `Create`
 
+![](images/100/100-4.png)
+
 - With the web application now created, expand the `Flows` hierarchy. Right click the `main-start` file and rename it to `landing`. This will be the landing page for our app (alternatively, think of it as an index.html file for any other app you may have built)
 
+![](images/100/100-5.png)
+
 - Create a new file by pressing the `+` button, and naming the page `specific-country`
+
+![](images/100/100-6.png)
 
 - The wep application has been successfully set up at this point. Before we begin building the Front End UI, let's set up our REST connection.
 
