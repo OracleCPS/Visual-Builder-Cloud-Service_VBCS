@@ -11,6 +11,8 @@ This is a workshop that will walk you through how to successfully create a fully
 - Action Chain configuration
 - Data Flow within VBCS
 
+This repository includes an export of the VBCS application for reference. 
+
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Objectives
